@@ -1,0 +1,18 @@
+{
+  "split": "chrono",
+  "scores": {
+    "region_txt": 0.1409,
+    "gname": 0.2817,
+    "targtype1_txt": 0.1966,
+    "weaptype1_txt": 0.5611,
+    "country_txt": 0.2036
+  },
+  "selected": [
+    "region_txt",
+    "gname",
+    "targtype1_txt",
+    "weaptype1_txt",
+    "country_txt"
+  ],
+  "train_fingerprint": "f6674df7b9150cb2ac63d3ba34894e877d298db1ed399ffd701ba0fe97aa48b7"
+}

@@ -1,0 +1,78 @@
+{
+  "split": "seed_91",
+  "train_fingerprint": "54d8061c8419b275499a2dcdc6b809dfe7e6a36e9e93ec85fcc3de2f0607e21c",
+  "max_train_date": "2020-12-31",
+  "n_train": 100510,
+  "bins": {},
+  "dropped": {
+    "pcc": [
+      {
+        "kept": "nwound",
+        "dropped": "casualties",
+        "pcc": 0.9879
+      },
+      {
+        "kept": "extended",
+        "dropped": "ishostkid",
+        "pcc": 0.8056
+      }
+    ],
+    "nmi": [
+      {
+        "kept": "weaptype1_txt",
+        "dropped": "weapsubtype1_txt",
+        "nmi": 0.6423
+      }
+    ],
+    "vif": []
+  },
+  "numeric_medians": {
+    "nkill": 1.0,
+    "nwound": 0.0,
+    "casualties": 1.0,
+    "success": 1.0,
+    "suicide": 0.0,
+    "extended": 0.0,
+    "multiple": 0.0,
+    "crit1": 1.0,
+    "crit2": 1.0,
+    "crit3": 1.0,
+    "vicinity": 0.0,
+    "ishostkid": 0.0,
+    "property": 0.0,
+    "int_any": 0.0
+  },
+  "categorical_modes": {
+    "region_txt": "Middle East & North Africa",
+    "country_txt": "Iraq",
+    "provstate": "Baghdad",
+    "city": "Baghdad",
+    "gname": "Unknown",
+    "targtype1_txt": "Private Citizens & Property",
+    "weaptype1_txt": "Explosives",
+    "weapsubtype1_txt": "Unknown Gun Type"
+  },
+  "kept_numeric": [
+    "nkill",
+    "nwound",
+    "success",
+    "suicide",
+    "extended",
+    "multiple",
+    "crit1",
+    "crit2",
+    "crit3",
+    "vicinity",
+    "property",
+    "int_any"
+  ],
+  "kept_categorical": [
+    "region_txt",
+    "country_txt",
+    "provstate",
+    "city",
+    "gname",
+    "targtype1_txt",
+    "weaptype1_txt"
+  ]
+}

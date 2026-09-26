@@ -1,0 +1,18 @@
+# GTD is licensed by START and must not be redistributed.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# model checkpoints and large intermediates
+runs/*/best.pt
+*.pt
+*.pth
+artifacts/augmented/*.parquet
+artifacts/graph/*.pkl
+
+.venv/
+__pycache__/
+*.pyc
+*.log
+.DS_Store

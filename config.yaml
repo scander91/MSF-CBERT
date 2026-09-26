@@ -1,0 +1,107 @@
+# =====================================================================
+# MSF-CBERT — single source of truth for all runs.
+# Do not change any value mid-campaign: that invalidates all runs made
+# under the old value.
+# =====================================================================
+
+paths:
+  gtd_raw: data/raw/globalterrorismdb_0522dist.xlsx   # verified 209,706 x 135 export
+  processed: data/processed/gtd.parquet
+  paraphrases: data/raw/paraphrases.jsonl        # R2: generated locally (Qwen2.5-7B-Instruct 4-bit)
+  splits_dir: artifacts/splits
+  features_dir: artifacts/features
+  graph_dir: artifacts/graph
+  aug_dir: artifacts/augmented
+  preprocess_dir: artifacts/preprocess           # D8: Tier-B train-fit artifacts (audited, A7)
+  runs_dir: runs
+  tables_dir: artifacts/tables
+
+data:
+  id_col: eventid
+  label_col: attacktype1_txt                     # 9 attack types incl. "Unknown"
+  # D4: label schemes are a runtime axis. The corpus keeps ALL 9 labels so both
+  # schemes share the same split manifests. 'without_unknown' drops Unknown-labeled
+  # events uniformly from every partition at train/eval time (task definition,
+  # not rebalancing).
+  label_schemes:
+    with_unknown: []                             # drop nothing -> 9 classes
+    without_unknown: ["Unknown"]                 # -> 8 classes
+  text_cols: [summary]                           # R4: summary only; motive excluded
+  min_summary_chars: 10                          # events with no usable narrative are dropped
+  date_cols: {year: iyear, month: imonth, day: iday}   # month/day==0 -> recovered/clamped (Tier A)
+  structured_cols: [region_txt, country_txt, provstate, city,
+                    gname, targtype1_txt, weaptype1_txt]
+  # Tier-A row-local numeric/binary columns carried for the structured (XGBoost) baseline.
+  # Distribution-dependent handling of these (imputation values, bins, redundancy
+  # elimination) is Tier-B: train-fit per split, frozen, fingerprinted (audit A7).
+  numeric_cols: [nkill, nwound, casualties, success, suicide, extended, multiple,
+                 crit1, crit2, crit3, vicinity, ishostkid, property, int_any]
+
+preprocess:                                      # D8 Tier-B settings (XGBoost feature set ONLY)
+  pcc_max: 0.8                                   # drop one of a pair with |PCC| > 0.8 (train-fit)
+  nmi_max: 0.6                                   # drop one of a pair with NMI > 0.6 (train-fit)
+  vif_max: 10.0                                  # iteratively drop numeric cols with VIF > 10 (train-fit)
+  # columns Tier-B redundancy elimination may NEVER remove (graph relations,
+  # verbalization inputs, identifiers, label):
+  protected_cols: [gname, targtype1_txt, weaptype1_txt, country_txt,
+                   region_txt, provstate, city, eventid, date, label]
+
+splits:
+  seeds: [13, 21, 42, 87, 100, 7, 33, 55, 76, 91]   # +5 (2026-09-01) for statistical power; original five unchanged
+  ratios: [0.70, 0.15, 0.15]
+  chrono: true                                   # also emit the chronological split
+
+augmentation:
+  generator: Qwen/Qwen2.5-7B-Instruct            # D1: always named explicitly; 4-bit on 16 GB
+  sim_threshold: 0.85                            # cosine-similarity filter
+  sim_encoder: sentence-transformers/all-MiniLM-L6-v2   # local; used for the sim field
+  require_human_ok: false                        # pipeline never self-claims human validation
+  review_sample_size: 150                        # exported to paraphrase_review_sample.csv for the author
+  paraphrases_per_event: 2
+  # R5: the 3 rarest informative classes CONFIRMED against measured train support at
+  # Stage 2 before any generation (expected values below).
+  target_classes: ["Hijacking",
+                   "Hostage Taking (Barricade Incident)",
+                   "Unarmed Assault"]
+
+features:
+  candidates: [region_txt, gname, targtype1_txt, weaptype1_txt, country_txt]
+  cramers_v_min: 0.10                            # R6: conventional weak-association floor
+
+graph:
+  relations:                                     # relation name -> GTD column
+    perpetrator: gname
+    target: targtype1_txt
+    weapon: weaptype1_txt
+    location: country_txt                        # R7: provstate/city too sparse/fragmented
+  exclude_entity_values: ["Unknown", "", "Other"]  # mega-hub / uninformative nodes
+  half_life_days: 69                             # exponential temporal decay
+  max_neighbors_per_entity: 512                  # cap hub entities; nearest in time to ref date
+  dim: 256
+
+model:
+  encoder: eventdata-utd/ConfliBERT-scr-uncased  # R8/D2: official org repo, cached locally
+  max_len: 256
+  text_dim: 768
+  fusion_dim: 512
+  dropout: 0.1
+  focal_gamma: 2.0
+
+train:
+  lr: 2.0e-5
+  batch_size: 32                                 # D3: smoke measured 3.47 GB peak at bs16 -> bs32 fits
+  grad_accum: 1                                  # effective batch 32
+  epochs: 5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  fp16: true
+  early_stop_metric: val_macro_f1
+  patience: 2
+  neighbor_embed_refresh: each_epoch             # cached train-event embeddings for graph
+  eval_batch_size: 128                           # D3: VRAM headroom confirmed at smoke
+
+eval:
+  bootstrap_n: 2000
+  ci: 0.95
+  faithfulness_sample: 2000
+  faithfulness_topk: 0.2                         # fraction of tokens removed/kept

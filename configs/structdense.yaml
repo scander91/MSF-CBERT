@@ -1,0 +1,127 @@
+paths:
+  gtd_raw: data/raw/globalterrorismdb_0522dist.xlsx
+  processed: data/processed/gtd.parquet
+  paraphrases: data/raw/paraphrases.jsonl
+  splits_dir: artifacts/splits
+  features_dir: artifacts/features
+  graph_dir: artifacts/graph
+  aug_dir: artifacts/augmented
+  preprocess_dir: artifacts/preprocess
+  runs_dir: runs
+  tables_dir: artifacts/tables
+data:
+  id_col: eventid
+  label_col: attacktype1_txt
+  label_schemes:
+    with_unknown: []
+    without_unknown:
+    - Unknown
+  text_cols:
+  - summary
+  min_summary_chars: 10
+  date_cols:
+    year: iyear
+    month: imonth
+    day: iday
+  structured_cols:
+  - region_txt
+  - country_txt
+  - provstate
+  - city
+  - gname
+  - targtype1_txt
+  - weaptype1_txt
+  numeric_cols:
+  - nkill
+  - nwound
+  - casualties
+  - success
+  - suicide
+  - extended
+  - multiple
+  - crit1
+  - crit2
+  - crit3
+  - vicinity
+  - ishostkid
+  - property
+  - int_any
+preprocess:
+  pcc_max: 0.8
+  nmi_max: 0.6
+  vif_max: 10.0
+  protected_cols:
+  - gname
+  - targtype1_txt
+  - weaptype1_txt
+  - country_txt
+  - region_txt
+  - provstate
+  - city
+  - eventid
+  - date
+  - label
+splits:
+  seeds: [13, 21, 42, 87, 100, 7, 33, 55, 76, 91]
+  ratios:
+  - 0.7
+  - 0.15
+  - 0.15
+  chrono: true
+augmentation:
+  generator: Qwen/Qwen2.5-7B-Instruct
+  sim_threshold: 0.85
+  sim_encoder: sentence-transformers/all-MiniLM-L6-v2
+  require_human_ok: false
+  review_sample_size: 150
+  paraphrases_per_event: 2
+  target_classes:
+  - Hijacking
+  - Hostage Taking (Barricade Incident)
+  - Unarmed Assault
+features:
+  candidates:
+  - region_txt
+  - gname
+  - targtype1_txt
+  - weaptype1_txt
+  - country_txt
+  cramers_v_min: 0.1
+graph:
+  relations:
+    perpetrator: gname
+    target: targtype1_txt
+    weapon: weaptype1_txt
+    location: country_txt
+  exclude_entity_values:
+  - Unknown
+  - ''
+  - Other
+  half_life_days: 69
+  max_neighbors_per_entity: 512
+  dim: 256
+model:
+  encoder: eventdata-utd/ConfliBERT-scr-uncased
+  max_len: 256
+  text_dim: 768
+  fusion_dim: 512
+  dropout: 0.1
+  focal_gamma: 2.0
+  struct_dense: true
+train:
+  lr: 2.0e-05
+  batch_size: 32
+  grad_accum: 1
+  epochs: 5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  fp16: true
+  early_stop_metric: val_macro_f1
+  patience: 2
+  neighbor_embed_refresh: each_epoch
+  eval_batch_size: 128
+eval:
+  bootstrap_n: 2000
+  ci: 0.95
+  faithfulness_sample: 2000
+  faithfulness_topk: 0.2

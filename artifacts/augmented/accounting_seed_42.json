@@ -1,0 +1,13 @@
+{
+  "generator": [
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "original_corpus": 143586,
+  "original_train": 100510,
+  "generated": 3778,
+  "sim_filtered": 2801,
+  "human_filtered": 2801,
+  "train_source_filtered": 1946,
+  "final_added": 1946,
+  "final_train_size": 102456
+}

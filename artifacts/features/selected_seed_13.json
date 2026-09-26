@@ -1,0 +1,18 @@
+{
+  "split": "seed_13",
+  "scores": {
+    "region_txt": 0.1469,
+    "gname": 0.2763,
+    "targtype1_txt": 0.2139,
+    "weaptype1_txt": 0.5603,
+    "country_txt": 0.2161
+  },
+  "selected": [
+    "region_txt",
+    "gname",
+    "targtype1_txt",
+    "weaptype1_txt",
+    "country_txt"
+  ],
+  "train_fingerprint": "880f95a2dbd9ea0d0a091178ce7826df6bb49e7b1ca6a994b0b3704acb0855d9"
+}

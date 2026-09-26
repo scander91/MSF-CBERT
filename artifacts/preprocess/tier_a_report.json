@@ -1,0 +1,41 @@
+{
+  "raw_rows": 209706,
+  "after_dedup": 209706,
+  "month_recovered_from_eventid": 0,
+  "day_recovered_from_eventid": 187,
+  "date_unparseable_dropped": 0,
+  "after_date_and_label": 209706,
+  "support_before_text_filter": {
+    "Bombing/Explosion": 98158,
+    "Armed Assault": 49553,
+    "Assassination": 21539,
+    "Hostage Taking (Kidnapping)": 14045,
+    "Facility/Infrastructure Attack": 12325,
+    "Unknown": 10942,
+    "Unarmed Assault": 1229,
+    "Hostage Taking (Barricade Incident)": 1156,
+    "Hijacking": 759
+  },
+  "events_without_usable_text": 66120,
+  "support_after_text_filter": {
+    "Bombing/Explosion": 70569,
+    "Armed Assault": 34055,
+    "Hostage Taking (Kidnapping)": 11087,
+    "Assassination": 9379,
+    "Unknown": 8338,
+    "Facility/Infrastructure Attack": 8269,
+    "Unarmed Assault": 877,
+    "Hostage Taking (Barricade Incident)": 582,
+    "Hijacking": 430
+  },
+  "true_usable_N": 143586,
+  "corpus_with_unknown": {
+    "events": 143586,
+    "classes": 9
+  },
+  "corpus_without_unknown": {
+    "events": 135248,
+    "classes": 8
+  },
+  "corpus_fingerprint": "a2c1ae1d3df81383"
+}
