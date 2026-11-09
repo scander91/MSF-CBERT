@@ -1,0 +1,721 @@
+arm,seed,cls,exposed,n,correct
+gated,13,Armed Assault,False,4444,3980
+gated,13,Armed Assault,True,664,609
+gated,13,Assassination,False,1357,1191
+gated,13,Assassination,True,50,44
+gated,13,Bombing/Explosion,False,8572,8234
+gated,13,Bombing/Explosion,True,2014,1962
+gated,13,Facility/Infrastructure Attack,False,900,825
+gated,13,Facility/Infrastructure Attack,True,340,328
+gated,13,Hijacking,False,57,41
+gated,13,Hijacking,True,8,7
+gated,13,Hostage Taking (Barricade Incident),False,78,51
+gated,13,Hostage Taking (Barricade Incident),True,9,7
+gated,13,Hostage Taking (Kidnapping),False,1471,1373
+gated,13,Hostage Taking (Kidnapping),True,192,182
+gated,13,Unarmed Assault,False,109,98
+gated,13,Unarmed Assault,True,22,21
+gated,13,Unknown,False,951,929
+gated,13,Unknown,True,300,295
+gated,21,Armed Assault,False,4452,3975
+gated,21,Armed Assault,True,656,607
+gated,21,Assassination,False,1352,1208
+gated,21,Assassination,True,55,51
+gated,21,Bombing/Explosion,False,8507,8231
+gated,21,Bombing/Explosion,True,2079,2044
+gated,21,Facility/Infrastructure Attack,False,890,809
+gated,21,Facility/Infrastructure Attack,True,351,340
+gated,21,Hijacking,False,53,41
+gated,21,Hijacking,True,11,9
+gated,21,Hostage Taking (Barricade Incident),False,81,47
+gated,21,Hostage Taking (Barricade Incident),True,6,6
+gated,21,Hostage Taking (Kidnapping),False,1492,1402
+gated,21,Hostage Taking (Kidnapping),True,171,164
+gated,21,Unarmed Assault,False,113,97
+gated,21,Unarmed Assault,True,19,17
+gated,21,Unknown,False,945,912
+gated,21,Unknown,True,305,304
+gated,42,Armed Assault,False,4456,3980
+gated,42,Armed Assault,True,652,603
+gated,42,Assassination,False,1372,1225
+gated,42,Assassination,True,35,32
+gated,42,Bombing/Explosion,False,8528,8263
+gated,42,Bombing/Explosion,True,2057,2015
+gated,42,Facility/Infrastructure Attack,False,906,829
+gated,42,Facility/Infrastructure Attack,True,334,317
+gated,42,Hijacking,False,59,42
+gated,42,Hijacking,True,6,4
+gated,42,Hostage Taking (Barricade Incident),False,76,37
+gated,42,Hostage Taking (Barricade Incident),True,12,10
+gated,42,Hostage Taking (Kidnapping),False,1475,1396
+gated,42,Hostage Taking (Kidnapping),True,188,178
+gated,42,Unarmed Assault,False,114,96
+gated,42,Unarmed Assault,True,18,18
+gated,42,Unknown,False,977,948
+gated,42,Unknown,True,273,267
+gated,87,Armed Assault,False,4460,3969
+gated,87,Armed Assault,True,648,599
+gated,87,Assassination,False,1362,1227
+gated,87,Assassination,True,45,41
+gated,87,Bombing/Explosion,False,8536,8301
+gated,87,Bombing/Explosion,True,2049,1994
+gated,87,Facility/Infrastructure Attack,False,912,814
+gated,87,Facility/Infrastructure Attack,True,328,316
+gated,87,Hijacking,False,56,38
+gated,87,Hijacking,True,8,8
+gated,87,Hostage Taking (Barricade Incident),False,81,41
+gated,87,Hostage Taking (Barricade Incident),True,7,6
+gated,87,Hostage Taking (Kidnapping),False,1470,1389
+gated,87,Hostage Taking (Kidnapping),True,193,186
+gated,87,Unarmed Assault,False,111,101
+gated,87,Unarmed Assault,True,21,21
+gated,87,Unknown,False,956,924
+gated,87,Unknown,True,295,290
+gated,100,Armed Assault,False,4433,3960
+gated,100,Armed Assault,True,675,626
+gated,100,Assassination,False,1346,1194
+gated,100,Assassination,True,61,52
+gated,100,Bombing/Explosion,False,8537,8262
+gated,100,Bombing/Explosion,True,2049,1993
+gated,100,Facility/Infrastructure Attack,False,903,807
+gated,100,Facility/Infrastructure Attack,True,337,324
+gated,100,Hijacking,False,55,36
+gated,100,Hijacking,True,9,5
+gated,100,Hostage Taking (Barricade Incident),False,77,46
+gated,100,Hostage Taking (Barricade Incident),True,11,7
+gated,100,Hostage Taking (Kidnapping),False,1479,1388
+gated,100,Hostage Taking (Kidnapping),True,184,176
+gated,100,Unarmed Assault,False,110,92
+gated,100,Unarmed Assault,True,21,19
+gated,100,Unknown,False,967,933
+gated,100,Unknown,True,284,280
+gated,7,Armed Assault,False,4475,3979
+gated,7,Armed Assault,True,633,586
+gated,7,Assassination,False,1365,1217
+gated,7,Assassination,True,42,41
+gated,7,Bombing/Explosion,False,8523,8221
+gated,7,Bombing/Explosion,True,2062,2020
+gated,7,Facility/Infrastructure Attack,False,892,817
+gated,7,Facility/Infrastructure Attack,True,349,335
+gated,7,Hijacking,False,58,50
+gated,7,Hijacking,True,7,3
+gated,7,Hostage Taking (Barricade Incident),False,79,54
+gated,7,Hostage Taking (Barricade Incident),True,8,7
+gated,7,Hostage Taking (Kidnapping),False,1489,1411
+gated,7,Hostage Taking (Kidnapping),True,174,168
+gated,7,Unarmed Assault,False,112,96
+gated,7,Unarmed Assault,True,20,20
+gated,7,Unknown,False,986,957
+gated,7,Unknown,True,264,260
+gated,33,Armed Assault,False,4439,3945
+gated,33,Armed Assault,True,669,609
+gated,33,Assassination,False,1364,1233
+gated,33,Assassination,True,43,39
+gated,33,Bombing/Explosion,False,8509,8242
+gated,33,Bombing/Explosion,True,2077,2042
+gated,33,Facility/Infrastructure Attack,False,925,832
+gated,33,Facility/Infrastructure Attack,True,315,305
+gated,33,Hijacking,False,59,50
+gated,33,Hijacking,True,6,5
+gated,33,Hostage Taking (Barricade Incident),False,77,40
+gated,33,Hostage Taking (Barricade Incident),True,10,8
+gated,33,Hostage Taking (Kidnapping),False,1484,1383
+gated,33,Hostage Taking (Kidnapping),True,179,173
+gated,33,Unarmed Assault,False,114,100
+gated,33,Unarmed Assault,True,18,18
+gated,33,Unknown,False,961,933
+gated,33,Unknown,True,289,284
+gated,55,Armed Assault,False,4434,3954
+gated,55,Armed Assault,True,674,615
+gated,55,Assassination,False,1357,1185
+gated,55,Assassination,True,50,44
+gated,55,Bombing/Explosion,False,8521,8268
+gated,55,Bombing/Explosion,True,2064,2022
+gated,55,Facility/Infrastructure Attack,False,917,832
+gated,55,Facility/Infrastructure Attack,True,323,312
+gated,55,Hijacking,False,54,40
+gated,55,Hijacking,True,11,7
+gated,55,Hostage Taking (Barricade Incident),False,79,52
+gated,55,Hostage Taking (Barricade Incident),True,9,4
+gated,55,Hostage Taking (Kidnapping),False,1455,1360
+gated,55,Hostage Taking (Kidnapping),True,208,196
+gated,55,Unarmed Assault,False,114,101
+gated,55,Unarmed Assault,True,17,16
+gated,55,Unknown,False,985,947
+gated,55,Unknown,True,266,261
+gated,76,Armed Assault,False,4473,3994
+gated,76,Armed Assault,True,635,576
+gated,76,Assassination,False,1347,1213
+gated,76,Assassination,True,60,55
+gated,76,Bombing/Explosion,False,8473,8209
+gated,76,Bombing/Explosion,True,2113,2063
+gated,76,Facility/Infrastructure Attack,False,909,814
+gated,76,Facility/Infrastructure Attack,True,332,321
+gated,76,Hijacking,False,56,39
+gated,76,Hijacking,True,9,6
+gated,76,Hostage Taking (Barricade Incident),False,81,44
+gated,76,Hostage Taking (Barricade Incident),True,6,5
+gated,76,Hostage Taking (Kidnapping),False,1491,1394
+gated,76,Hostage Taking (Kidnapping),True,172,167
+gated,76,Unarmed Assault,False,105,87
+gated,76,Unarmed Assault,True,26,25
+gated,76,Unknown,False,957,930
+gated,76,Unknown,True,293,286
+gated,91,Armed Assault,False,4432,4087
+gated,91,Armed Assault,True,676,619
+gated,91,Assassination,False,1356,1052
+gated,91,Assassination,True,51,39
+gated,91,Bombing/Explosion,False,8550,8219
+gated,91,Bombing/Explosion,True,2035,1977
+gated,91,Facility/Infrastructure Attack,False,902,797
+gated,91,Facility/Infrastructure Attack,True,338,307
+gated,91,Hijacking,False,56,39
+gated,91,Hijacking,True,9,6
+gated,91,Hostage Taking (Barricade Incident),False,77,43
+gated,91,Hostage Taking (Barricade Incident),True,10,5
+gated,91,Hostage Taking (Kidnapping),False,1478,1407
+gated,91,Hostage Taking (Kidnapping),True,185,170
+gated,91,Unarmed Assault,False,113,89
+gated,91,Unarmed Assault,True,19,18
+gated,91,Unknown,False,963,945
+gated,91,Unknown,True,288,284
+pub_gated,13,Armed Assault,False,4444,4001
+pub_gated,13,Armed Assault,True,664,613
+pub_gated,13,Assassination,False,1357,1180
+pub_gated,13,Assassination,True,50,44
+pub_gated,13,Bombing/Explosion,False,8572,8279
+pub_gated,13,Bombing/Explosion,True,2014,1958
+pub_gated,13,Facility/Infrastructure Attack,False,900,811
+pub_gated,13,Facility/Infrastructure Attack,True,340,325
+pub_gated,13,Hijacking,False,57,42
+pub_gated,13,Hijacking,True,8,7
+pub_gated,13,Hostage Taking (Barricade Incident),False,78,54
+pub_gated,13,Hostage Taking (Barricade Incident),True,9,7
+pub_gated,13,Hostage Taking (Kidnapping),False,1471,1385
+pub_gated,13,Hostage Taking (Kidnapping),True,192,184
+pub_gated,13,Unarmed Assault,False,109,98
+pub_gated,13,Unarmed Assault,True,22,21
+pub_gated,13,Unknown,False,951,922
+pub_gated,13,Unknown,True,300,293
+pub_gated,21,Armed Assault,False,4452,3931
+pub_gated,21,Armed Assault,True,656,607
+pub_gated,21,Assassination,False,1352,1217
+pub_gated,21,Assassination,True,55,49
+pub_gated,21,Bombing/Explosion,False,8507,8196
+pub_gated,21,Bombing/Explosion,True,2079,2033
+pub_gated,21,Facility/Infrastructure Attack,False,890,793
+pub_gated,21,Facility/Infrastructure Attack,True,351,332
+pub_gated,21,Hijacking,False,53,40
+pub_gated,21,Hijacking,True,11,7
+pub_gated,21,Hostage Taking (Barricade Incident),False,81,43
+pub_gated,21,Hostage Taking (Barricade Incident),True,6,6
+pub_gated,21,Hostage Taking (Kidnapping),False,1492,1425
+pub_gated,21,Hostage Taking (Kidnapping),True,171,166
+pub_gated,21,Unarmed Assault,False,113,99
+pub_gated,21,Unarmed Assault,True,19,18
+pub_gated,21,Unknown,False,945,911
+pub_gated,21,Unknown,True,305,303
+pub_gated,42,Armed Assault,False,4456,3903
+pub_gated,42,Armed Assault,True,652,596
+pub_gated,42,Assassination,False,1372,1271
+pub_gated,42,Assassination,True,35,32
+pub_gated,42,Bombing/Explosion,False,8528,8225
+pub_gated,42,Bombing/Explosion,True,2057,2010
+pub_gated,42,Facility/Infrastructure Attack,False,906,817
+pub_gated,42,Facility/Infrastructure Attack,True,334,308
+pub_gated,42,Hijacking,False,59,44
+pub_gated,42,Hijacking,True,6,4
+pub_gated,42,Hostage Taking (Barricade Incident),False,76,36
+pub_gated,42,Hostage Taking (Barricade Incident),True,12,10
+pub_gated,42,Hostage Taking (Kidnapping),False,1475,1388
+pub_gated,42,Hostage Taking (Kidnapping),True,188,181
+pub_gated,42,Unarmed Assault,False,114,100
+pub_gated,42,Unarmed Assault,True,18,18
+pub_gated,42,Unknown,False,977,955
+pub_gated,42,Unknown,True,273,269
+pub_gated,87,Armed Assault,False,4460,3963
+pub_gated,87,Armed Assault,True,648,599
+pub_gated,87,Assassination,False,1362,1223
+pub_gated,87,Assassination,True,45,43
+pub_gated,87,Bombing/Explosion,False,8536,8292
+pub_gated,87,Bombing/Explosion,True,2049,1992
+pub_gated,87,Facility/Infrastructure Attack,False,912,815
+pub_gated,87,Facility/Infrastructure Attack,True,328,314
+pub_gated,87,Hijacking,False,56,36
+pub_gated,87,Hijacking,True,8,8
+pub_gated,87,Hostage Taking (Barricade Incident),False,81,40
+pub_gated,87,Hostage Taking (Barricade Incident),True,7,6
+pub_gated,87,Hostage Taking (Kidnapping),False,1470,1385
+pub_gated,87,Hostage Taking (Kidnapping),True,193,186
+pub_gated,87,Unarmed Assault,False,111,101
+pub_gated,87,Unarmed Assault,True,21,21
+pub_gated,87,Unknown,False,956,925
+pub_gated,87,Unknown,True,295,292
+pub_gated,100,Armed Assault,False,4433,3982
+pub_gated,100,Armed Assault,True,675,626
+pub_gated,100,Assassination,False,1346,1199
+pub_gated,100,Assassination,True,61,51
+pub_gated,100,Bombing/Explosion,False,8537,8257
+pub_gated,100,Bombing/Explosion,True,2049,1986
+pub_gated,100,Facility/Infrastructure Attack,False,903,801
+pub_gated,100,Facility/Infrastructure Attack,True,337,324
+pub_gated,100,Hijacking,False,55,36
+pub_gated,100,Hijacking,True,9,5
+pub_gated,100,Hostage Taking (Barricade Incident),False,77,45
+pub_gated,100,Hostage Taking (Barricade Incident),True,11,7
+pub_gated,100,Hostage Taking (Kidnapping),False,1479,1399
+pub_gated,100,Hostage Taking (Kidnapping),True,184,175
+pub_gated,100,Unarmed Assault,False,110,94
+pub_gated,100,Unarmed Assault,True,21,20
+pub_gated,100,Unknown,False,967,934
+pub_gated,100,Unknown,True,284,281
+pub_gated,7,Armed Assault,False,4475,3996
+pub_gated,7,Armed Assault,True,633,591
+pub_gated,7,Assassination,False,1365,1202
+pub_gated,7,Assassination,True,42,41
+pub_gated,7,Bombing/Explosion,False,8523,8263
+pub_gated,7,Bombing/Explosion,True,2062,2029
+pub_gated,7,Facility/Infrastructure Attack,False,892,813
+pub_gated,7,Facility/Infrastructure Attack,True,349,334
+pub_gated,7,Hijacking,False,58,50
+pub_gated,7,Hijacking,True,7,3
+pub_gated,7,Hostage Taking (Barricade Incident),False,79,59
+pub_gated,7,Hostage Taking (Barricade Incident),True,8,6
+pub_gated,7,Hostage Taking (Kidnapping),False,1489,1414
+pub_gated,7,Hostage Taking (Kidnapping),True,174,167
+pub_gated,7,Unarmed Assault,False,112,98
+pub_gated,7,Unarmed Assault,True,20,20
+pub_gated,7,Unknown,False,986,945
+pub_gated,7,Unknown,True,264,260
+pub_gated,33,Armed Assault,False,4439,3943
+pub_gated,33,Armed Assault,True,669,588
+pub_gated,33,Assassination,False,1364,1206
+pub_gated,33,Assassination,True,43,38
+pub_gated,33,Bombing/Explosion,False,8509,8267
+pub_gated,33,Bombing/Explosion,True,2077,2050
+pub_gated,33,Facility/Infrastructure Attack,False,925,851
+pub_gated,33,Facility/Infrastructure Attack,True,315,303
+pub_gated,33,Hijacking,False,59,48
+pub_gated,33,Hijacking,True,6,5
+pub_gated,33,Hostage Taking (Barricade Incident),False,77,45
+pub_gated,33,Hostage Taking (Barricade Incident),True,10,8
+pub_gated,33,Hostage Taking (Kidnapping),False,1484,1373
+pub_gated,33,Hostage Taking (Kidnapping),True,179,171
+pub_gated,33,Unarmed Assault,False,114,101
+pub_gated,33,Unarmed Assault,True,18,18
+pub_gated,33,Unknown,False,961,925
+pub_gated,33,Unknown,True,289,283
+pub_gated,55,Armed Assault,False,4434,3998
+pub_gated,55,Armed Assault,True,674,617
+pub_gated,55,Assassination,False,1357,1177
+pub_gated,55,Assassination,True,50,46
+pub_gated,55,Bombing/Explosion,False,8521,8226
+pub_gated,55,Bombing/Explosion,True,2064,2014
+pub_gated,55,Facility/Infrastructure Attack,False,917,826
+pub_gated,55,Facility/Infrastructure Attack,True,323,310
+pub_gated,55,Hijacking,False,54,38
+pub_gated,55,Hijacking,True,11,7
+pub_gated,55,Hostage Taking (Barricade Incident),False,79,55
+pub_gated,55,Hostage Taking (Barricade Incident),True,9,4
+pub_gated,55,Hostage Taking (Kidnapping),False,1455,1362
+pub_gated,55,Hostage Taking (Kidnapping),True,208,201
+pub_gated,55,Unarmed Assault,False,114,102
+pub_gated,55,Unarmed Assault,True,17,16
+pub_gated,55,Unknown,False,985,945
+pub_gated,55,Unknown,True,266,261
+pub_gated,76,Armed Assault,False,4473,3980
+pub_gated,76,Armed Assault,True,635,576
+pub_gated,76,Assassination,False,1347,1214
+pub_gated,76,Assassination,True,60,55
+pub_gated,76,Bombing/Explosion,False,8473,8194
+pub_gated,76,Bombing/Explosion,True,2113,2073
+pub_gated,76,Facility/Infrastructure Attack,False,909,819
+pub_gated,76,Facility/Infrastructure Attack,True,332,317
+pub_gated,76,Hijacking,False,56,38
+pub_gated,76,Hijacking,True,9,6
+pub_gated,76,Hostage Taking (Barricade Incident),False,81,50
+pub_gated,76,Hostage Taking (Barricade Incident),True,6,6
+pub_gated,76,Hostage Taking (Kidnapping),False,1491,1399
+pub_gated,76,Hostage Taking (Kidnapping),True,172,163
+pub_gated,76,Unarmed Assault,False,105,95
+pub_gated,76,Unarmed Assault,True,26,24
+pub_gated,76,Unknown,False,957,928
+pub_gated,76,Unknown,True,293,285
+pub_gated,91,Armed Assault,False,4432,3903
+pub_gated,91,Armed Assault,True,676,624
+pub_gated,91,Assassination,False,1356,1243
+pub_gated,91,Assassination,True,51,47
+pub_gated,91,Bombing/Explosion,False,8550,8286
+pub_gated,91,Bombing/Explosion,True,2035,1985
+pub_gated,91,Facility/Infrastructure Attack,False,902,823
+pub_gated,91,Facility/Infrastructure Attack,True,338,326
+pub_gated,91,Hijacking,False,56,43
+pub_gated,91,Hijacking,True,9,8
+pub_gated,91,Hostage Taking (Barricade Incident),False,77,48
+pub_gated,91,Hostage Taking (Barricade Incident),True,10,7
+pub_gated,91,Hostage Taking (Kidnapping),False,1478,1388
+pub_gated,91,Hostage Taking (Kidnapping),True,185,172
+pub_gated,91,Unarmed Assault,False,113,98
+pub_gated,91,Unarmed Assault,True,19,19
+pub_gated,91,Unknown,False,963,930
+pub_gated,91,Unknown,True,288,284
+text_cat,13,Armed Assault,False,4444,3914
+text_cat,13,Armed Assault,True,664,597
+text_cat,13,Assassination,False,1357,1190
+text_cat,13,Assassination,True,50,42
+text_cat,13,Bombing/Explosion,False,8572,8146
+text_cat,13,Bombing/Explosion,True,2014,1966
+text_cat,13,Facility/Infrastructure Attack,False,900,798
+text_cat,13,Facility/Infrastructure Attack,True,340,321
+text_cat,13,Hijacking,False,57,41
+text_cat,13,Hijacking,True,8,7
+text_cat,13,Hostage Taking (Barricade Incident),False,78,56
+text_cat,13,Hostage Taking (Barricade Incident),True,9,8
+text_cat,13,Hostage Taking (Kidnapping),False,1471,1389
+text_cat,13,Hostage Taking (Kidnapping),True,192,185
+text_cat,13,Unarmed Assault,False,109,98
+text_cat,13,Unarmed Assault,True,22,21
+text_cat,13,Unknown,False,951,918
+text_cat,13,Unknown,True,300,294
+text_cat,21,Armed Assault,False,4452,3901
+text_cat,21,Armed Assault,True,656,606
+text_cat,21,Assassination,False,1352,1203
+text_cat,21,Assassination,True,55,51
+text_cat,21,Bombing/Explosion,False,8507,8061
+text_cat,21,Bombing/Explosion,True,2079,2030
+text_cat,21,Facility/Infrastructure Attack,False,890,801
+text_cat,21,Facility/Infrastructure Attack,True,351,336
+text_cat,21,Hijacking,False,53,43
+text_cat,21,Hijacking,True,11,6
+text_cat,21,Hostage Taking (Barricade Incident),False,81,50
+text_cat,21,Hostage Taking (Barricade Incident),True,6,5
+text_cat,21,Hostage Taking (Kidnapping),False,1492,1401
+text_cat,21,Hostage Taking (Kidnapping),True,171,162
+text_cat,21,Unarmed Assault,False,113,99
+text_cat,21,Unarmed Assault,True,19,17
+text_cat,21,Unknown,False,945,900
+text_cat,21,Unknown,True,305,303
+text_cat,42,Armed Assault,False,4456,3949
+text_cat,42,Armed Assault,True,652,605
+text_cat,42,Assassination,False,1372,1222
+text_cat,42,Assassination,True,35,31
+text_cat,42,Bombing/Explosion,False,8528,8091
+text_cat,42,Bombing/Explosion,True,2057,2001
+text_cat,42,Facility/Infrastructure Attack,False,906,825
+text_cat,42,Facility/Infrastructure Attack,True,334,316
+text_cat,42,Hijacking,False,59,46
+text_cat,42,Hijacking,True,6,4
+text_cat,42,Hostage Taking (Barricade Incident),False,76,36
+text_cat,42,Hostage Taking (Barricade Incident),True,12,11
+text_cat,42,Hostage Taking (Kidnapping),False,1475,1386
+text_cat,42,Hostage Taking (Kidnapping),True,188,178
+text_cat,42,Unarmed Assault,False,114,103
+text_cat,42,Unarmed Assault,True,18,18
+text_cat,42,Unknown,False,977,941
+text_cat,42,Unknown,True,273,269
+text_cat,87,Armed Assault,False,4460,3898
+text_cat,87,Armed Assault,True,648,585
+text_cat,87,Assassination,False,1362,1211
+text_cat,87,Assassination,True,45,41
+text_cat,87,Bombing/Explosion,False,8536,8114
+text_cat,87,Bombing/Explosion,True,2049,1992
+text_cat,87,Facility/Infrastructure Attack,False,912,816
+text_cat,87,Facility/Infrastructure Attack,True,328,318
+text_cat,87,Hijacking,False,56,39
+text_cat,87,Hijacking,True,8,8
+text_cat,87,Hostage Taking (Barricade Incident),False,81,45
+text_cat,87,Hostage Taking (Barricade Incident),True,7,6
+text_cat,87,Hostage Taking (Kidnapping),False,1470,1382
+text_cat,87,Hostage Taking (Kidnapping),True,193,189
+text_cat,87,Unarmed Assault,False,111,101
+text_cat,87,Unarmed Assault,True,21,21
+text_cat,87,Unknown,False,956,923
+text_cat,87,Unknown,True,295,292
+text_cat,100,Armed Assault,False,4433,3905
+text_cat,100,Armed Assault,True,675,623
+text_cat,100,Assassination,False,1346,1163
+text_cat,100,Assassination,True,61,53
+text_cat,100,Bombing/Explosion,False,8537,8106
+text_cat,100,Bombing/Explosion,True,2049,1981
+text_cat,100,Facility/Infrastructure Attack,False,903,796
+text_cat,100,Facility/Infrastructure Attack,True,337,323
+text_cat,100,Hijacking,False,55,33
+text_cat,100,Hijacking,True,9,5
+text_cat,100,Hostage Taking (Barricade Incident),False,77,49
+text_cat,100,Hostage Taking (Barricade Incident),True,11,7
+text_cat,100,Hostage Taking (Kidnapping),False,1479,1378
+text_cat,100,Hostage Taking (Kidnapping),True,184,176
+text_cat,100,Unarmed Assault,False,110,88
+text_cat,100,Unarmed Assault,True,21,20
+text_cat,100,Unknown,False,967,931
+text_cat,100,Unknown,True,284,279
+text_cat,7,Armed Assault,False,4475,3880
+text_cat,7,Armed Assault,True,633,580
+text_cat,7,Assassination,False,1365,1233
+text_cat,7,Assassination,True,42,41
+text_cat,7,Bombing/Explosion,False,8523,7998
+text_cat,7,Bombing/Explosion,True,2062,2008
+text_cat,7,Facility/Infrastructure Attack,False,892,814
+text_cat,7,Facility/Infrastructure Attack,True,349,335
+text_cat,7,Hijacking,False,58,47
+text_cat,7,Hijacking,True,7,3
+text_cat,7,Hostage Taking (Barricade Incident),False,79,61
+text_cat,7,Hostage Taking (Barricade Incident),True,8,5
+text_cat,7,Hostage Taking (Kidnapping),False,1489,1409
+text_cat,7,Hostage Taking (Kidnapping),True,174,162
+text_cat,7,Unarmed Assault,False,112,97
+text_cat,7,Unarmed Assault,True,20,20
+text_cat,7,Unknown,False,986,935
+text_cat,7,Unknown,True,264,259
+text_cat,33,Armed Assault,False,4439,3916
+text_cat,33,Armed Assault,True,669,605
+text_cat,33,Assassination,False,1364,1177
+text_cat,33,Assassination,True,43,35
+text_cat,33,Bombing/Explosion,False,8509,8100
+text_cat,33,Bombing/Explosion,True,2077,2045
+text_cat,33,Facility/Infrastructure Attack,False,925,823
+text_cat,33,Facility/Infrastructure Attack,True,315,300
+text_cat,33,Hijacking,False,59,45
+text_cat,33,Hijacking,True,6,6
+text_cat,33,Hostage Taking (Barricade Incident),False,77,38
+text_cat,33,Hostage Taking (Barricade Incident),True,10,8
+text_cat,33,Hostage Taking (Kidnapping),False,1484,1381
+text_cat,33,Hostage Taking (Kidnapping),True,179,171
+text_cat,33,Unarmed Assault,False,114,99
+text_cat,33,Unarmed Assault,True,18,18
+text_cat,33,Unknown,False,961,927
+text_cat,33,Unknown,True,289,285
+text_cat,55,Armed Assault,False,4434,3935
+text_cat,55,Armed Assault,True,674,617
+text_cat,55,Assassination,False,1357,1151
+text_cat,55,Assassination,True,50,44
+text_cat,55,Bombing/Explosion,False,8521,8110
+text_cat,55,Bombing/Explosion,True,2064,2007
+text_cat,55,Facility/Infrastructure Attack,False,917,818
+text_cat,55,Facility/Infrastructure Attack,True,323,308
+text_cat,55,Hijacking,False,54,37
+text_cat,55,Hijacking,True,11,8
+text_cat,55,Hostage Taking (Barricade Incident),False,79,52
+text_cat,55,Hostage Taking (Barricade Incident),True,9,5
+text_cat,55,Hostage Taking (Kidnapping),False,1455,1349
+text_cat,55,Hostage Taking (Kidnapping),True,208,198
+text_cat,55,Unarmed Assault,False,114,97
+text_cat,55,Unarmed Assault,True,17,16
+text_cat,55,Unknown,False,985,934
+text_cat,55,Unknown,True,266,257
+text_cat,76,Armed Assault,False,4473,3937
+text_cat,76,Armed Assault,True,635,578
+text_cat,76,Assassination,False,1347,1192
+text_cat,76,Assassination,True,60,54
+text_cat,76,Bombing/Explosion,False,8473,8018
+text_cat,76,Bombing/Explosion,True,2113,2060
+text_cat,76,Facility/Infrastructure Attack,False,909,797
+text_cat,76,Facility/Infrastructure Attack,True,332,315
+text_cat,76,Hijacking,False,56,38
+text_cat,76,Hijacking,True,9,5
+text_cat,76,Hostage Taking (Barricade Incident),False,81,48
+text_cat,76,Hostage Taking (Barricade Incident),True,6,5
+text_cat,76,Hostage Taking (Kidnapping),False,1491,1385
+text_cat,76,Hostage Taking (Kidnapping),True,172,166
+text_cat,76,Unarmed Assault,False,105,91
+text_cat,76,Unarmed Assault,True,26,25
+text_cat,76,Unknown,False,957,926
+text_cat,76,Unknown,True,293,285
+text_cat,91,Armed Assault,False,4432,3889
+text_cat,91,Armed Assault,True,676,617
+text_cat,91,Assassination,False,1356,1164
+text_cat,91,Assassination,True,51,46
+text_cat,91,Bombing/Explosion,False,8550,8136
+text_cat,91,Bombing/Explosion,True,2035,1974
+text_cat,91,Facility/Infrastructure Attack,False,902,816
+text_cat,91,Facility/Infrastructure Attack,True,338,329
+text_cat,91,Hijacking,False,56,40
+text_cat,91,Hijacking,True,9,7
+text_cat,91,Hostage Taking (Barricade Incident),False,77,47
+text_cat,91,Hostage Taking (Barricade Incident),True,10,6
+text_cat,91,Hostage Taking (Kidnapping),False,1478,1387
+text_cat,91,Hostage Taking (Kidnapping),True,185,172
+text_cat,91,Unarmed Assault,False,113,95
+text_cat,91,Unarmed Assault,True,19,19
+text_cat,91,Unknown,False,963,935
+text_cat,91,Unknown,True,288,284
+text_only,13,Armed Assault,False,4444,3404
+text_only,13,Armed Assault,True,664,505
+text_only,13,Assassination,False,1357,1203
+text_only,13,Assassination,True,50,43
+text_only,13,Bombing/Explosion,False,8572,8007
+text_only,13,Bombing/Explosion,True,2014,1936
+text_only,13,Facility/Infrastructure Attack,False,900,779
+text_only,13,Facility/Infrastructure Attack,True,340,313
+text_only,13,Hijacking,False,57,41
+text_only,13,Hijacking,True,8,7
+text_only,13,Hostage Taking (Barricade Incident),False,78,51
+text_only,13,Hostage Taking (Barricade Incident),True,9,9
+text_only,13,Hostage Taking (Kidnapping),False,1471,1387
+text_only,13,Hostage Taking (Kidnapping),True,192,185
+text_only,13,Unarmed Assault,False,109,84
+text_only,13,Unarmed Assault,True,22,21
+text_only,13,Unknown,False,951,765
+text_only,13,Unknown,True,300,273
+text_only,21,Armed Assault,False,4452,3366
+text_only,21,Armed Assault,True,656,501
+text_only,21,Assassination,False,1352,1199
+text_only,21,Assassination,True,55,49
+text_only,21,Bombing/Explosion,False,8507,7999
+text_only,21,Bombing/Explosion,True,2079,2021
+text_only,21,Facility/Infrastructure Attack,False,890,782
+text_only,21,Facility/Infrastructure Attack,True,351,332
+text_only,21,Hijacking,False,53,43
+text_only,21,Hijacking,True,11,7
+text_only,21,Hostage Taking (Barricade Incident),False,81,51
+text_only,21,Hostage Taking (Barricade Incident),True,6,5
+text_only,21,Hostage Taking (Kidnapping),False,1492,1403
+text_only,21,Hostage Taking (Kidnapping),True,171,165
+text_only,21,Unarmed Assault,False,113,79
+text_only,21,Unarmed Assault,True,19,16
+text_only,21,Unknown,False,945,777
+text_only,21,Unknown,True,305,287
+text_only,42,Armed Assault,False,4456,3401
+text_only,42,Armed Assault,True,652,506
+text_only,42,Assassination,False,1372,1233
+text_only,42,Assassination,True,35,30
+text_only,42,Bombing/Explosion,False,8528,8036
+text_only,42,Bombing/Explosion,True,2057,1984
+text_only,42,Facility/Infrastructure Attack,False,906,799
+text_only,42,Facility/Infrastructure Attack,True,334,312
+text_only,42,Hijacking,False,59,45
+text_only,42,Hijacking,True,6,4
+text_only,42,Hostage Taking (Barricade Incident),False,76,43
+text_only,42,Hostage Taking (Barricade Incident),True,12,11
+text_only,42,Hostage Taking (Kidnapping),False,1475,1395
+text_only,42,Hostage Taking (Kidnapping),True,188,178
+text_only,42,Unarmed Assault,False,114,77
+text_only,42,Unarmed Assault,True,18,18
+text_only,42,Unknown,False,977,794
+text_only,42,Unknown,True,273,244
+text_only,87,Armed Assault,False,4460,3436
+text_only,87,Armed Assault,True,648,506
+text_only,87,Assassination,False,1362,1219
+text_only,87,Assassination,True,45,41
+text_only,87,Bombing/Explosion,False,8536,8043
+text_only,87,Bombing/Explosion,True,2049,1979
+text_only,87,Facility/Infrastructure Attack,False,912,793
+text_only,87,Facility/Infrastructure Attack,True,328,308
+text_only,87,Hijacking,False,56,40
+text_only,87,Hijacking,True,8,8
+text_only,87,Hostage Taking (Barricade Incident),False,81,42
+text_only,87,Hostage Taking (Barricade Incident),True,7,6
+text_only,87,Hostage Taking (Kidnapping),False,1470,1383
+text_only,87,Hostage Taking (Kidnapping),True,193,190
+text_only,87,Unarmed Assault,False,111,85
+text_only,87,Unarmed Assault,True,21,18
+text_only,87,Unknown,False,956,782
+text_only,87,Unknown,True,295,271
+text_only,100,Armed Assault,False,4433,3457
+text_only,100,Armed Assault,True,675,539
+text_only,100,Assassination,False,1346,1162
+text_only,100,Assassination,True,61,56
+text_only,100,Bombing/Explosion,False,8537,8005
+text_only,100,Bombing/Explosion,True,2049,1969
+text_only,100,Facility/Infrastructure Attack,False,903,777
+text_only,100,Facility/Infrastructure Attack,True,337,307
+text_only,100,Hijacking,False,55,35
+text_only,100,Hijacking,True,9,6
+text_only,100,Hostage Taking (Barricade Incident),False,77,45
+text_only,100,Hostage Taking (Barricade Incident),True,11,7
+text_only,100,Hostage Taking (Kidnapping),False,1479,1383
+text_only,100,Hostage Taking (Kidnapping),True,184,174
+text_only,100,Unarmed Assault,False,110,76
+text_only,100,Unarmed Assault,True,21,18
+text_only,100,Unknown,False,967,797
+text_only,100,Unknown,True,284,250
+text_only,7,Armed Assault,False,4475,3333
+text_only,7,Armed Assault,True,633,493
+text_only,7,Assassination,False,1365,1209
+text_only,7,Assassination,True,42,36
+text_only,7,Bombing/Explosion,False,8523,8018
+text_only,7,Bombing/Explosion,True,2062,2001
+text_only,7,Facility/Infrastructure Attack,False,892,783
+text_only,7,Facility/Infrastructure Attack,True,349,332
+text_only,7,Hijacking,False,58,50
+text_only,7,Hijacking,True,7,3
+text_only,7,Hostage Taking (Barricade Incident),False,79,53
+text_only,7,Hostage Taking (Barricade Incident),True,8,5
+text_only,7,Hostage Taking (Kidnapping),False,1489,1410
+text_only,7,Hostage Taking (Kidnapping),True,174,166
+text_only,7,Unarmed Assault,False,112,78
+text_only,7,Unarmed Assault,True,20,19
+text_only,7,Unknown,False,986,822
+text_only,7,Unknown,True,264,234
+text_only,33,Armed Assault,False,4439,3324
+text_only,33,Armed Assault,True,669,507
+text_only,33,Assassination,False,1364,1216
+text_only,33,Assassination,True,43,36
+text_only,33,Bombing/Explosion,False,8509,8001
+text_only,33,Bombing/Explosion,True,2077,2031
+text_only,33,Facility/Infrastructure Attack,False,925,812
+text_only,33,Facility/Infrastructure Attack,True,315,291
+text_only,33,Hijacking,False,59,46
+text_only,33,Hijacking,True,6,6
+text_only,33,Hostage Taking (Barricade Incident),False,77,38
+text_only,33,Hostage Taking (Barricade Incident),True,10,8
+text_only,33,Hostage Taking (Kidnapping),False,1484,1394
+text_only,33,Hostage Taking (Kidnapping),True,179,172
+text_only,33,Unarmed Assault,False,114,87
+text_only,33,Unarmed Assault,True,18,18
+text_only,33,Unknown,False,961,794
+text_only,33,Unknown,True,289,264
+text_only,55,Armed Assault,False,4434,3436
+text_only,55,Armed Assault,True,674,527
+text_only,55,Assassination,False,1357,1185
+text_only,55,Assassination,True,50,45
+text_only,55,Bombing/Explosion,False,8521,8046
+text_only,55,Bombing/Explosion,True,2064,1995
+text_only,55,Facility/Infrastructure Attack,False,917,794
+text_only,55,Facility/Infrastructure Attack,True,323,306
+text_only,55,Hijacking,False,54,39
+text_only,55,Hijacking,True,11,8
+text_only,55,Hostage Taking (Barricade Incident),False,79,49
+text_only,55,Hostage Taking (Barricade Incident),True,9,4
+text_only,55,Hostage Taking (Kidnapping),False,1455,1357
+text_only,55,Hostage Taking (Kidnapping),True,208,197
+text_only,55,Unarmed Assault,False,114,84
+text_only,55,Unarmed Assault,True,17,16
+text_only,55,Unknown,False,985,799
+text_only,55,Unknown,True,266,239
+text_only,76,Armed Assault,False,4473,3402
+text_only,76,Armed Assault,True,635,460
+text_only,76,Assassination,False,1347,1203
+text_only,76,Assassination,True,60,54
+text_only,76,Bombing/Explosion,False,8473,7983
+text_only,76,Bombing/Explosion,True,2113,2046
+text_only,76,Facility/Infrastructure Attack,False,909,779
+text_only,76,Facility/Infrastructure Attack,True,332,311
+text_only,76,Hijacking,False,56,38
+text_only,76,Hijacking,True,9,6
+text_only,76,Hostage Taking (Barricade Incident),False,81,51
+text_only,76,Hostage Taking (Barricade Incident),True,6,5
+text_only,76,Hostage Taking (Kidnapping),False,1491,1387
+text_only,76,Hostage Taking (Kidnapping),True,172,163
+text_only,76,Unarmed Assault,False,105,73
+text_only,76,Unarmed Assault,True,26,25
+text_only,76,Unknown,False,957,811
+text_only,76,Unknown,True,293,269
+text_only,91,Armed Assault,False,4432,3385
+text_only,91,Armed Assault,True,676,521
+text_only,91,Assassination,False,1356,1209
+text_only,91,Assassination,True,51,44
+text_only,91,Bombing/Explosion,False,8550,8033
+text_only,91,Bombing/Explosion,True,2035,1953
+text_only,91,Facility/Infrastructure Attack,False,902,791
+text_only,91,Facility/Infrastructure Attack,True,338,319
+text_only,91,Hijacking,False,56,44
+text_only,91,Hijacking,True,9,9
+text_only,91,Hostage Taking (Barricade Incident),False,77,46
+text_only,91,Hostage Taking (Barricade Incident),True,10,7
+text_only,91,Hostage Taking (Kidnapping),False,1478,1393
+text_only,91,Hostage Taking (Kidnapping),True,185,173
+text_only,91,Unarmed Assault,False,113,77
+text_only,91,Unarmed Assault,True,19,17
+text_only,91,Unknown,False,963,807
+text_only,91,Unknown,True,288,267

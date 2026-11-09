@@ -1,0 +1,6 @@
+panel,label,partition,a,b,kind,mean,lo,hi,k,n,p
+,"+G vs. MSF-CBERT (S, published)",S,pub_gated_graph,pub_gated,comp,-0.17360306687746457,-1.1510609434382042,0.8038548096832749,4,10,0.6972237557619164
+,"text+graph vs. text+cat. (S, published)",S,pub_text_graph,pub_text_cat,comp,0.12432563992469454,-0.5716955616695055,0.8203468415188947,5,10,0.6955915504667332
+,+G vs. MSF-CBERT (G),G,graph_gated,gated,comp,-0.5558043961863192,-1.1795752070448646,0.06796641467222642,0,10,0.07464178076311749
+,"graph, no categoricals, vs. text only (S)",S,graph_nocat,text_only,sys,3.8883716248127427,2.8004636499367033,4.976279599688782,10,10,2.0333612890007815e-05
+,"text+cat. vs. text only (S, reference)",S,text_cat,text_only,sys,5.137950447083172,4.472686494306796,5.803214399859549,10,10,2.9810154276144324e-08

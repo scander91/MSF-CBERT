@@ -1,0 +1,10 @@
+Attack type,Unexposed n (pooled),Exposed n (pooled),Acc. unexposed,Acc. exposed,Exposed − unexposed
+Armed Assault,"44,498","6,582",89.49,91.90,+2.41
+Assassination,"13,578",492,87.97,89.02,+1.05
+Bombing/Explosion,"85,256","20,599",96.71,97.73,+1.02
+Facility/Infrastructure Attack,"9,056","3,347",90.28,95.76,+5.47
+Hijacking,563,84,73.89,71.43,-2.46
+Hostage Taking (Barricade Incident),786,88,57.89,73.86,+15.98
+Hostage Taking (Kidnapping),"14,784","1,846",94.04,95.34,+1.30
+Unarmed Assault,"1,115",201,85.83,96.02,+10.19
+Unknown,"9,648","2,857",96.99,98.39,+1.40

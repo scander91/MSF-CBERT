@@ -1,0 +1,44 @@
+{
+ "gated": {
+  "total": 110008329,
+  "encoder": 109081344,
+  "non_encoder": 926985,
+  "text_proj": 393728,
+  "fusion_and_head": 533257
+ },
+ "concat_direct": {
+  "total": 109479797,
+  "encoder": 109081344,
+  "non_encoder": 398453,
+  "text_proj": 393728,
+  "fusion_and_head": 4725
+ },
+ "concat_dense": {
+  "total": 109485321,
+  "encoder": 109081344,
+  "non_encoder": 403977,
+  "text_proj": 393728,
+  "fusion_and_head": 10249
+ },
+ "mlp_matched": {
+  "total": 110008227,
+  "encoder": 109081344,
+  "non_encoder": 926883,
+  "text_proj": 393728,
+  "fusion_and_head": 533155
+ },
+ "fixed_avg": {
+  "total": 109614601,
+  "encoder": 109081344,
+  "non_encoder": 533257,
+  "text_proj": 393728,
+  "fusion_and_head": 139529
+ },
+ "text_cat": {
+  "total": 109479689,
+  "encoder": 109081344,
+  "non_encoder": 398345,
+  "text_proj": 393728,
+  "fusion_and_head": 4617
+ }
+}

@@ -1,0 +1,10 @@
+partition,arm,label,mean,sd,n
+S,pub_gated,MSF-CBERT (published),86.01192808077691,0.6656132772177168,10.0
+S,pub_gated_graph,MSF-CBERT+G (published),85.83832501389945,0.886826528900224,10.0
+S,pub_bertgcn,BertGCN-style (published),84.98841929322721,0.840303004234842,10.0
+S,pub_text_graph,Text+graph (published),84.80845897606955,1.0029213020786767,10.0
+S,pub_text_cat,Text+categoricals (published),84.68413333614484,0.8091212986141545,10.0
+S,gated,MSF-CBERT (retraining),85.50500241261499,0.8675438650840178,10.0
+S,text_only,Text only,79.63415542600224,0.4202566196100726,10.0
+S,struct_xgb_cat_parity,"XGBoost, structured only",67.51036021684179,1.340196969137781,10.0
+S,struct_mlp_parity,"MLP, structured only",67.55699450785256,1.2070367535175266,10.0

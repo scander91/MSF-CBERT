@@ -1,0 +1,51 @@
+[
+ {
+  "seed": 87,
+  "sizes": {
+   "train": 100512,
+   "val": 21537,
+   "test": 21537
+  },
+  "groups": {
+   "test": 18701,
+   "train": 87209,
+   "val": 18706
+  },
+  "class_counts": {
+   "test": {
+    "Armed Assault": 5108,
+    "Assassination": 1407,
+    "Bombing/Explosion": 10586,
+    "Facility/Infrastructure Attack": 1240,
+    "Hijacking": 64,
+    "Hostage Taking (Barricade Incident)": 87,
+    "Hostage Taking (Kidnapping)": 1662,
+    "Unarmed Assault": 132,
+    "Unknown": 1251
+   },
+   "train": {
+    "Armed Assault": 23838,
+    "Assassination": 6565,
+    "Bombing/Explosion": 49399,
+    "Facility/Infrastructure Attack": 5789,
+    "Hijacking": 301,
+    "Hostage Taking (Barricade Incident)": 408,
+    "Hostage Taking (Kidnapping)": 7762,
+    "Unarmed Assault": 613,
+    "Unknown": 5837
+   },
+   "val": {
+    "Armed Assault": 5109,
+    "Assassination": 1407,
+    "Bombing/Explosion": 10584,
+    "Facility/Infrastructure Attack": 1240,
+    "Hijacking": 65,
+    "Hostage Taking (Barricade Incident)": 87,
+    "Hostage Taking (Kidnapping)": 1663,
+    "Unarmed Assault": 132,
+    "Unknown": 1250
+   }
+  },
+  "max_abs_class_share_diff_test_vs_corpus": 5.071866754124965e-05
+ }
+]

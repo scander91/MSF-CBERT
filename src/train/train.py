@@ -28,7 +28,7 @@ from sklearn.metrics import f1_score, classification_report
 from src.util import load_config, log, ensure_dir, read_manifest
 from src.graph.build_graph import GraphContext
 from src.models.msf_cbert import MSFCBert, FocalLoss, make_loss
-from src.features.verbalize import build_input_text, verbalize_numerics
+from src.features.verbalize import build_input_text, verbalize_numerics, first_sentence_text
 
 
 class EventDataset(Dataset):
@@ -228,6 +228,9 @@ def main():
     df = df_full[~df_full["label"].isin(drops)]            # scheme-filtered task corpus
     man = read_manifest(cfg, args.split)
     selected = json.load(open(f"{cfg['paths']['features_dir']}/selected_{args.split}.json"))["selected"]
+    excl_cat = set(cfg["model"].get("verbalize_exclude") or [])
+    assert excl_cat <= set(selected), f"verbalize_exclude not selected: {excl_cat - set(selected)}"
+    selected = [c for c in selected if c not in excl_cat]
     labels = sorted(df["label"].unique()); label2id = {l: i for i, l in enumerate(labels)}
     log(f"scheme={args.label_scheme}: {len(labels)} classes, corpus {len(df):,}/{len(df_full):,}")
 
@@ -238,6 +241,11 @@ def main():
         train_df = train_df[~train_df["label"].isin(drops)]
     val_df = df.merge(man[man.split == "val"], on="eventid")
     test_df = df.merge(man[man.split == "test"], on="eventid")
+    if cfg["model"].get("narrative") == "first_sentence":
+        # row-local input restriction, applied identically to every partition
+        for part in (train_df, val_df, test_df):
+            part["text"] = part["text"].map(first_sentence_text)
+        log("narrative restricted to the first sentence")
     assert "is_augmented" not in val_df or (val_df.get("is_augmented", 0) == 0).all()
     if args.max_train and args.max_train < len(train_df):
         from sklearn.model_selection import train_test_split

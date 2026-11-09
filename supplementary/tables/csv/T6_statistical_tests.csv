@@ -1,0 +1,46 @@
+Family,Comparison,Mean diff. [95% CI],d_z,p,p Holm,Seeds first higher
+Fusion (S),MSF-CBERT (gated fusion) vs Direct concatenation of standardised numerics,"+0.61 [-0.27, +1.50]",0.88,0.152,0.456,9/10
+Fusion (S),"MSF-CBERT (gated fusion) vs MLP fusion, parameter-matched","-0.48 [-1.75, +0.80]",-0.47,0.419,0.838,3/10
+Fusion (S),MSF-CBERT (gated fusion) vs Fixed 0.5/0.5 average (gate removed),"-0.32 [-1.41, +0.76]",-0.38,0.517,0.838,4/10
+Feature dependence (S),MSF-CBERT (gated fusion) vs Without outcome fields,"+0.64 [-0.21, +1.48]",0.96,0.121,0.242,9/10
+Feature dependence (S),MSF-CBERT (gated fusion) vs Text+categoricals,"+0.73 [-0.49, +1.96]",0.76,0.209,0.242,8/10
+Feature dependence (S),MSF-CBERT (gated fusion) vs Text+numerics (no categoricals),"+5.11 [+4.06, +6.16]",6.18,<0.001,<0.001,10/10
+Feature dependence (S),MSF-CBERT (gated fusion) vs Text only,"+5.87 [+4.69, +7.06]",6.28,<0.001,<0.001,10/10
+Group-disjoint (G),MSF-CBERT (gated fusion) vs BertGCN-style,"+1.10 [+0.35, +1.85]",1.86,0.009,0.009,10/10
+Group-disjoint (G),MSF-CBERT (gated fusion) vs Text+categoricals,"+1.39 [+0.74, +2.05]",2.70,<0.001,0.002,10/10
+Group-disjoint (G),MSF-CBERT (gated fusion) vs Text only,"+7.07 [+6.29, +7.85]",11.56,<0.001,<0.001,10/10
+Graph,MSF-CBERT+G vs MSF-CBERT (gated fusion),"-0.56 [-1.18, +0.07]",-1.13,0.075,0.075,0/10
+Graph,Text+graph (no categoricals) vs Text only,"+3.89 [+2.80, +4.98]",4.53,<0.001,<0.001,10/10
+descriptive (S),MSF-CBERT (gated fusion) vs Concatenation of dense numeric vector,"-0.16 [-1.10, +0.79]",-0.21,0.712,--,4/10
+descriptive (S),MSF-CBERT (gated fusion) vs Numerics: vicinity only,"+0.95 [-0.23, +2.14]",1.02,0.102,--,9/10
+descriptive (S),MSF-CBERT (gated fusion) vs Restricted input,"+6.12 [+5.28, +6.97]",9.20,<0.001,--,10/10
+descriptive (S),"MSF-CBERT (gated fusion) vs Restricted input, first sentence","+13.92 [+12.24, +15.60]",10.50,<0.001,--,10/10
+descriptive (S),"MSF-CBERT (gated fusion) vs Text only, first sentence","+14.03 [+12.66, +15.40]",12.98,<0.001,--,10/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without weapon type,"+4.88 [+3.84, +5.92]",5.93,<0.001,--,10/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without perpetrator group,"-0.16 [-1.05, +0.73]",-0.22,0.700,--,6/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without analyst-coded fields,"-0.55 [-1.44, +0.34]",-0.79,0.194,--,3/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without extended,"-0.65 [-1.70, +0.39]",-0.79,0.191,--,0/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without property damage,"-0.37 [-1.29, +0.54]",-0.52,0.381,--,3/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without fatalities and injuries,"-0.27 [-1.21, +0.68]",-0.36,0.536,--,5/10
+descriptive (S),MSF-CBERT (gated fusion) vs Without success,"+0.61 [-0.49, +1.71]",0.70,0.241,--,9/10
+descriptive (S),"MSF-CBERT (gated fusion) vs XGBoost, earlier features (ordinal codes)","+18.39 [+16.84, +19.95]",15.01,<0.001,--,10/10
+descriptive (S),"MSF-CBERT (gated fusion) vs XGBoost, native categoricals, same structured inputs","+17.99 [+16.11, +19.88]",12.10,<0.001,--,10/10
+descriptive (S),"MSF-CBERT (gated fusion) vs MLP (one-hot), same structured inputs","+17.95 [+16.20, +19.70]",13.03,<0.001,--,10/10
+descriptive (S),"Restricted input vs XGBoost, native categoricals, restricted input","+54.87 [+54.14, +55.60]",95.32,<0.001,--,10/10
+descriptive (S),"Restricted input vs MLP (one-hot), restricted input","+54.09 [+52.18, +55.99]",35.91,<0.001,--,10/10
+descriptive (S),"Without outcome fields vs XGBoost, native categoricals, without outcome fields","+27.46 [+25.63, +29.30]",19.01,<0.001,--,10/10
+descriptive (S),"Restricted input vs Restricted input, first sentence","+7.79 [+6.61, +8.98]",8.32,<0.001,--,10/10
+descriptive (S),MSF-CBERT (gated fusion) vs MSF-CBERT (published runs),"-0.51 [-1.63, +0.61]",-0.57,0.332,--,3/10
+descriptive (S),Text+categoricals vs Text+categoricals (published runs),"+0.09 [-0.59, +0.77]",0.16,0.776,--,5/10
+descriptive (S),MSF-CBERT (published runs) vs BertGCN-style (published runs),"+1.02 [-0.04, +2.09]",1.22,0.058,--,8/10
+descriptive (S),MSF-CBERT (published runs) vs Text+graph (published runs),"+1.20 [+0.14, +2.27]",1.43,0.031,--,9/10
+descriptive (S),MSF-CBERT (published runs) vs Text+categoricals (published runs),"+1.33 [+0.25, +2.41]",1.56,0.021,--,10/10
+descriptive (S),MSF-CBERT+G (published runs) vs MSF-CBERT (published runs),"-0.17 [-1.15, +0.80]",-0.23,0.697,--,4/10
+descriptive (G),MSF-CBERT (gated fusion) vs Direct concatenation of standardised numerics,"+1.56 [+0.34, +2.78]",1.63,0.018,--,9/10
+descriptive (G),"MSF-CBERT (gated fusion) vs MLP fusion, parameter-matched","+0.42 [-0.45, +1.29]",0.62,0.299,--,7/10
+descriptive (G),MSF-CBERT (gated fusion) vs Without outcome fields,"+1.39 [+0.64, +2.15]",2.33,0.002,--,10/10
+descriptive (G),MSF-CBERT (gated fusion) vs Restricted input,"+7.11 [+5.64, +8.59]",6.12,<0.001,--,10/10
+descriptive (G),"MSF-CBERT (gated fusion) vs XGBoost, native categoricals, same structured inputs","+19.90 [+18.91, +20.89]",25.50,<0.001,--,10/10
+descriptive (G),"MSF-CBERT (gated fusion) vs MLP (one-hot), same structured inputs","+19.00 [+16.84, +21.16]",11.14,<0.001,--,10/10
+descriptive (G),"Restricted input vs XGBoost, native categoricals, restricted input","+54.30 [+52.04, +56.57]",30.41,<0.001,--,10/10
+descriptive (G),"Restricted input vs MLP (one-hot), restricted input","+54.47 [+51.21, +57.73]",21.16,<0.001,--,10/10

@@ -1,0 +1,161 @@
+{
+ "n": 143586,
+ "related_edges": 114382,
+ "related_targets_outside_corpus": 327,
+ "exact_edges": 3769,
+ "events_with_related": 23970,
+ "related_only": {
+  "groups": 127601,
+  "singletons": 119626,
+  "events_in_multi": 23960,
+  "largest": 80,
+  "top5": [
+   80,
+   71,
+   51,
+   49,
+   43
+  ],
+  "p99_size": 4.0
+ },
+ "exact_only": {
+  "groups": 139817,
+  "singletons": 138178,
+  "events_in_multi": 5408,
+  "largest": 100,
+  "top5": [
+   100,
+   80,
+   50,
+   37,
+   36
+  ],
+  "p99_size": 2.0
+ },
+ "related+exact": {
+  "groups": 126929,
+  "singletons": 118697,
+  "events_in_multi": 24889,
+  "largest": 100,
+  "top5": [
+   100,
+   80,
+   71,
+   51,
+   50
+  ],
+  "p99_size": 4.0
+ },
+ "near_only_0.95": {
+  "groups": 138365,
+  "singletons": 135782,
+  "events_in_multi": 7804,
+  "largest": 100,
+  "top5": [
+   100,
+   80,
+   50,
+   37,
+   36
+  ],
+  "p99_size": 2.0
+ },
+ "all_0.95": {
+  "groups": 126283,
+  "singletons": 117649,
+  "events_in_multi": 25937,
+  "largest": 100,
+  "top5": [
+   100,
+   80,
+   71,
+   51,
+   50
+  ],
+  "p99_size": 4.0
+ },
+ "near_only_0.9": {
+  "groups": 135174,
+  "singletons": 131207,
+  "events_in_multi": 12379,
+  "largest": 100,
+  "top5": [
+   100,
+   80,
+   59,
+   56,
+   50
+  ],
+  "p99_size": 2.0
+ },
+ "all_0.9": {
+  "groups": 124616,
+  "singletons": 115460,
+  "events_in_multi": 28126,
+  "largest": 100,
+  "top5": [
+   100,
+   80,
+   71,
+   59,
+   56
+  ],
+  "p99_size": 4.0
+ },
+ "near_only_0.85": {
+  "groups": 130510,
+  "singletons": 124782,
+  "events_in_multi": 18804,
+  "largest": 210,
+  "top5": [
+   210,
+   100,
+   81,
+   80,
+   72
+  ],
+  "p99_size": 3.0
+ },
+ "all_0.85": {
+  "groups": 122167,
+  "singletons": 112383,
+  "events_in_multi": 31203,
+  "largest": 210,
+  "top5": [
+   210,
+   100,
+   81,
+   80,
+   72
+  ],
+  "p99_size": 4.0
+ },
+ "near_only_0.8": {
+  "groups": 124670,
+  "singletons": 117229,
+  "events_in_multi": 26357,
+  "largest": 1076,
+  "top5": [
+   1076,
+   260,
+   158,
+   148,
+   121
+  ],
+  "p99_size": 4.0
+ },
+ "all_0.8": {
+  "groups": 118357,
+  "singletons": 107944,
+  "events_in_multi": 35642,
+  "largest": 1076,
+  "top5": [
+   1076,
+   261,
+   158,
+   148,
+   121
+  ],
+  "p99_size": 4.0
+ }
+}

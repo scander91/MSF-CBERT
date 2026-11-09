@@ -1,7 +1,7 @@
 """Step 02a — Generate paraphrases for the minority attack-type classes (R2, D1).
 
-Generator: Qwen/Qwen2.5-7B-Instruct, 4-bit NF4 (fits the 16 GB card) — named explicitly
-in every artifact; this pipeline never calls it "GPT-4" (invariant 5).
+Generator: Qwen/Qwen2.5-7B-Instruct, 4-bit NF4 (fits the 16 GB card), named explicitly
+in every artifact.
 
 Split-independence: paraphrases are generated ONCE for every event of the target
 classes in the processed corpus. Per-split train-only containment happens later in

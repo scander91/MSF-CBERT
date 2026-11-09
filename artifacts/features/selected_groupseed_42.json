@@ -1,0 +1,18 @@
+{
+  "split": "groupseed_42",
+  "scores": {
+    "region_txt": 0.1442,
+    "gname": 0.2809,
+    "targtype1_txt": 0.2134,
+    "weaptype1_txt": 0.5608,
+    "country_txt": 0.2176
+  },
+  "selected": [
+    "region_txt",
+    "gname",
+    "targtype1_txt",
+    "weaptype1_txt",
+    "country_txt"
+  ],
+  "train_fingerprint": "f91fb3dbc08c7a5369fb095ba068d7c376ab0435763bf8a7dbf2d2acd4fe6134"
+}

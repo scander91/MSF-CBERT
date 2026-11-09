@@ -200,10 +200,28 @@ class MSFCBert(nn.Module):
                 for c in self.struct_cat_cols})
             sd = 256
             s_in = struct_meta["num_dim"] + 32 * len(self.struct_cat_cols)
-            self.struct_mlp = nn.Sequential(
-                nn.Linear(s_in, sd), nn.Tanh(), nn.Dropout(m["dropout"]))
-            self.struct_proj = nn.Linear(sd, m["fusion_dim"])
-            self.struct_gate = nn.Linear(m["fusion_dim"] + sd, m["fusion_dim"])
+            # Fusion alternatives for the same text and numeric inputs; "gated" is the
+            # MSF-CBERT model and keeps its state_dict unchanged.
+            self.fusion_mode = m.get("fusion_mode", "gated")
+            fd = m["fusion_dim"]
+            if self.fusion_mode != "concat_direct":
+                self.struct_mlp = nn.Sequential(
+                    nn.Linear(s_in, sd), nn.Tanh(), nn.Dropout(m["dropout"]))
+            if self.fusion_mode in ("gated", "fixed_avg"):
+                self.struct_proj = nn.Linear(sd, fd)
+            if self.fusion_mode == "gated":
+                self.struct_gate = nn.Linear(fd + sd, fd)
+            elif self.fusion_mode == "concat_direct":
+                head_in = fd + s_in
+            elif self.fusion_mode == "concat_dense":
+                head_in = fd + sd
+            elif self.fusion_mode == "mlp_matched":
+                h = int(m["fusion_mlp_hidden"])
+                self.fusion_mlp = nn.Sequential(
+                    nn.Linear(fd + sd, h), nn.Tanh(), nn.Dropout(m["dropout"]))
+                head_in = h
+            elif self.fusion_mode != "fixed_avg":
+                raise ValueError(f"unknown fusion_mode {self.fusion_mode!r}")
         # availability-conditioned outcome adapter. The
         # post-event fields get their own gated residual branch, scaled by a per-event
         # availability indicator m in {0,1}; with m = 0 the output does not depend on them.
@@ -261,9 +279,19 @@ class MSFCBert(nn.Module):
         else:
             f = self.text_head_proj(a)
         if self.struct_dense and snum is not None:
-            s = self.struct_vector(snum, scat)
-            z = torch.sigmoid(self.struct_gate(torch.cat([f, s], dim=-1)))
-            f = z * f + (1 - z) * torch.tanh(self.struct_proj(s))
+            if self.fusion_mode == "concat_direct":
+                f = torch.cat([f, snum], dim=-1)
+            else:
+                s = self.struct_vector(snum, scat)
+                if self.fusion_mode == "gated":
+                    z = torch.sigmoid(self.struct_gate(torch.cat([f, s], dim=-1)))
+                    f = z * f + (1 - z) * torch.tanh(self.struct_proj(s))
+                elif self.fusion_mode == "fixed_avg":
+                    f = 0.5 * f + 0.5 * torch.tanh(self.struct_proj(s))
+                elif self.fusion_mode == "concat_dense":
+                    f = torch.cat([f, s], dim=-1)
+                else:
+                    f = self.fusion_mlp(torch.cat([f, s], dim=-1))
         if self.out_dim:
             assert sout is not None, "outcome-adapter model needs sout"
             h = self.out_mlp(sout)

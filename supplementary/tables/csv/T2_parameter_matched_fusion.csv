@@ -1,0 +1,7 @@
+Fusion,Trainable params,Non-encoder params,S macro-F1,Gated − variant (S) [95% CI],p (Holm),Seeds gated higher,G macro-F1,Gated − variant (G)
+MSF-CBERT (gated fusion),"110,008,329","926,985",85.51 ± 0.87,--,--,--,85.56 ± 0.68,--
+Direct concatenation of standardised numerics,"109,479,797","398,453",84.89 ± 0.81,"+0.61 [-0.27, +1.50]",0.152 (0.456),9/10,84.00 ± 1.12,"+1.56, p=0.018, 9/10"
+Concatenation of dense numeric vector,"109,485,321","403,977",85.66 ± 0.65,"-0.16 [-1.10, +0.79]",0.712 (unadj.),4/10,--,--
+"MLP fusion, parameter-matched","110,008,227","926,883",85.98 ± 0.96,"-0.48 [-1.75, +0.80]",0.419 (0.838),3/10,85.14 ± 0.76,"+0.42, p=0.299, 7/10"
+Fixed 0.5/0.5 average (gate removed),"109,614,601","533,257",85.83 ± 0.62,"-0.32 [-1.41, +0.76]",0.517 (0.838),4/10,--,--
+Text+categoricals,"109,479,689","398,345",84.77 ± 0.67,"+0.73 [-0.49, +1.96]",0.209 (0.242),8/10,84.17 ± 0.79,"+1.39, p<0.001, 10/10"

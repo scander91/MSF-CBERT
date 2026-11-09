@@ -1,0 +1,14 @@
+Claim,Manuscript,Verified / new,Source
+MSF-CBERT test macro-F1 (S),86.01 ± 0.67,86.01 ± 0.67 recomputed; retraining 85.51 ± 0.87,per_run_metrics.csv
+MSF-CBERT accuracy (S),93.88 ± 0.16,93.88 ± 0.16,per_run_metrics.csv
+MSF-CBERT+G (S),85.84 ± 0.89,85.84 ± 0.89,per_run_metrics.csv
+Text+categoricals (S),84.68 ± 0.81,84.68 ± 0.81; retraining 84.77 ± 0.67,per_run_metrics.csv
+Text+graph (S),84.81 ± 1.00,84.81 ± 1.00,per_run_metrics.csv
+BertGCN-style (S),84.99 ± 0.84,84.99 ± 0.84,per_run_metrics.csv
+Chronological MSF-CBERT,83.30,83.30,per_run_metrics.csv
+Retraining − published MSF-CBERT (run-to-run),--,"-0.51, p=0.332, 3/10",contrasts.csv
+Test events sharing a group with training (S),"3.05% verbatim, 3.30% near-dup.","16.52--16.96% (related, identical, cosine ≥0.90)",group_exposure_summary.csv
+MSF-CBERT on group-disjoint splits,--,85.56 ± 0.68,arm_summary.csv
+Gate vs simpler fusion,gated branch (no comparison),no measurable difference (Holm p ≥ 0.46),contrasts.csv (fusion family)
+Graph redundancy,not isolated,graph without categoricals +3.89 over text only; +G on G −0.56 (p=0.075),contrasts.csv (graph family)
+Unknown categorical values,explicit Unknown states,kept as Unknown in data; verbalisation omits the phrase,src/features/verbalize.py

@@ -1,0 +1,24 @@
+feature,gtd_column,meaning,role_in_architecture,available_at_initial_report,post_event_outcome_or_label_defining,justification_and_uncertainty,arm_treatment
+Narrative,summary,Analyst-written incident summary,ConfliBERT text input,Not established,Contains post-event content,"Written after the fact; on the 143586 corpus 86.9% mention claimed responsibility, 44.7% killed, 40.2% injured/wounded. Field gives no timestamp of authorship.",Kept; first-sentence variant in restricted_first
+Date stamp in narrative,summary prefix,Leading mm/dd/yyyy stamp in 97.8% of summaries,Part of text input,Plausible,No,Date of event is normally known but may be approximate,Kept
+Region,region_txt,Geographic region,Verbalised category (selected on every seed),Plausible,No,Derived from location; location usually reported early but may be revised,Kept in restricted
+Country,country_txt,Country of incident,Verbalised category,Plausible,No,As region,Kept in restricted
+Target type,targtype1_txt,General target category,Verbalised category,Plausible but not established,Possibly,Analyst classification; depends on identified target,Kept in restricted; flagged
+Weapon type,weaptype1_txt,General weapon category,Verbalised category,Not established,Strongly label-linked,Explosives row 93% Bombing/Explosion; Firearms 69% Armed Assault; Incendiary 82% Facility/Infrastructure,Dropped in restricted; no_weapon
+Perpetrator group,gname,Attributed group,Verbalised category,Often not,Post-event attribution,47.9% Unknown in corpus; attribution often follows investigation or claims,Dropped in restricted; no_perp
+Fatalities,nkill,Confirmed fatalities,Dense numeric,No,Outcome,Counts are revised after the event,no_outcome; no_casualty; dropped in restricted
+Injuries,nwound,Confirmed non-fatal injuries,Dense numeric,No,Outcome,As fatalities,no_outcome; no_casualty; dropped in restricted
+Success,success,Coded attack success,Dense numeric,No,Outcome and definition-linked,Coding rule depends on attack type (assassination successful only if target killed; paper Section IV),no_outcome; no_success; dropped in restricted
+Extended,extended,Incident duration over 24 hours,Dense numeric,No,Outcome and label-linked,Known only once duration has passed; 72.7% of kidnappings vs at most 2.1% for most classes; V=0.769,no_outcome; no_extended; dropped in restricted
+Property damage,property,Evidence of property damage,Dense numeric,No,Outcome and label-linked,95.1% of Facility/Infrastructure events; 19.5% unknown,no_outcome; no_property; dropped in restricted
+Suicide,suicide,Suicide attack flag,Dense numeric,Not established,Possibly label-linked,Often reported early but can only be confirmed later,Dropped in restricted
+Multiple,multiple,Part of a multi-part incident,Dense numeric,No,Analyst linkage,Set when records are linked (matches `related` on nearly all rows),no_coded; dropped in restricted
+Criterion 1,crit1,Inclusion criterion 1,Dense numeric,No,Analyst inclusion coding,Coded at database inclusion,no_coded; dropped in restricted
+Criterion 2,crit2,Inclusion criterion 2,Dense numeric,No,Analyst inclusion coding,Coded at database inclusion,no_coded; dropped in restricted
+Criterion 3,crit3,Inclusion criterion 3,Dense numeric,No,Analyst inclusion coding,Coded at database inclusion; class means vary 0.61-0.99,no_coded; dropped in restricted
+Vicinity,vicinity,Incident in immediate vicinity of city,Dense numeric,Plausible,No,Location-derived,Kept in restricted (only numeric retained)
+International,int_any,Any international dimension,Dense numeric,No,Analyst coding,Needs perpetrator nationality; 49.7% unknown,no_coded; dropped in restricted
+Casualty total,casualties,nkill+nwound,Removed by training-only redundancy filter on all ten seeds,No,Outcome,Not a model input,Not used
+Hostage flag,ishostkid,Hostages or kidnapping victims,Removed by training-only redundancy filter on all ten seeds,No,Label-defining,PCC 0.80-0.81 with extended; not a model input,Not used
+Weapon sub-type,weapsubtype1_txt,Detailed weapon,Structured-only baseline: removed by NMI filter; not in neural input,Not established,Label-linked,Not a model input,Not used
+Province; city,provstate; city,Sub-national location,Structured-only baselines only; never verbalised,Plausible,No,City has 4.7% Unknown,Kept in restricted structured-only baselines

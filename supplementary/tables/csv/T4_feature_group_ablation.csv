@@ -1,0 +1,17 @@
+Setting,Removed inputs,S macro-F1,Variant − full (S) [95% CI],p,Seeds variant higher,G macro-F1,Variant − full (G),Chrono macro-F1
+"Full input (MSF-CBERT, gated)","none (text, 5 verbalised categoricals, 12 numerics)",85.51 ± 0.87,--,--,--,85.56 ± 0.68,--,83.30
+Without outcome fields,"nkill, nwound, success, extended, property",84.87 ± 0.58,"-0.64 [-1.48, +0.21]",0.242 (Holm),1/10,84.17 ± 0.90,-1.39,83.00
+Without success,success,84.90 ± 0.82,"-0.61 [-1.71, +0.49]",0.241 (unadj.),1/10,--,--,--
+Without extended,extended,86.16 ± 0.78,"+0.65 [-0.39, +1.70]",0.191 (unadj.),10/10,--,--,--
+Without property damage,property,85.88 ± 0.88,"+0.37 [-0.54, +1.29]",0.381 (unadj.),7/10,--,--,--
+Without fatalities and injuries,"nkill, nwound",85.77 ± 0.83,"+0.27 [-0.68, +1.21]",0.536 (unadj.),5/10,--,--,--
+Without analyst-coded fields,"crit1-3, multiple, int_any",86.06 ± 0.57,"+0.55 [-0.34, +1.44]",0.194 (unadj.),7/10,--,--,--
+Numerics: vicinity only,11 numerics (keeps vicinity),84.55 ± 0.44,"-0.95 [-2.14, +0.23]",0.102 (unadj.),1/10,--,--,--
+Text+categoricals,all 12 numerics,84.77 ± 0.67,"-0.73 [-1.96, +0.49]",0.242 (Holm),2/10,84.17 ± 0.79,-1.39,--
+Without perpetrator group,gname,85.66 ± 0.74,"+0.16 [-0.73, +1.05]",0.700 (unadj.),4/10,--,--,--
+Without weapon type,weaptype1_txt,80.62 ± 0.48,"-4.88 [-5.92, -3.84]",<0.001 (unadj.),0/10,--,--,--
+Text+numerics (no categoricals),all 5 categoricals,80.40 ± 0.67,"-5.11 [-6.16, -4.06]",<0.001 (Holm),0/10,--,--,--
+Text only,all categoricals and numerics,79.63 ± 0.42,"-5.87 [-7.06, -4.69]",<0.001 (Holm),0/10,78.49 ± 0.72,-7.07,76.91
+Restricted input,"gname, weaptype1_txt, 11 numerics (keeps vicinity)",79.38 ± 0.67,"-6.12 [-6.97, -5.28]",<0.001 (unadj.),0/10,78.45 ± 1.53,-7.11,76.75
+"Restricted input, first sentence",as restricted; narrative cut to date stamp + first sentence,71.59 ± 0.96,"-13.92 [-15.60, -12.24]",<0.001 (unadj.),0/10,--,--,69.45
+"Text only, first sentence",all structured inputs; narrative cut to first sentence,71.48 ± 0.86,"-14.03 [-15.40, -12.66]",<0.001 (unadj.),0/10,--,--,--

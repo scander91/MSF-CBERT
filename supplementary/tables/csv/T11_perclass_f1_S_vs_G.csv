@@ -1,0 +1,10 @@
+Attack type,S MSF-CBERT,S Text+cat.,G MSF-CBERT,G Text+cat.
+Armed Assault,90.98 ± 0.21,90.35 ± 0.24,90.74 ± 0.31,89.79 ± 0.68
+Assassination,81.05 ± 1.24,74.28 ± 0.66,81.21 ± 1.07,73.37 ± 1.26
+Bombing/Explosion,97.94 ± 0.16,97.06 ± 0.12,97.91 ± 0.17,96.79 ± 0.23
+Facility/Infrastructure Attack,88.97 ± 0.58,88.59 ± 0.86,88.07 ± 0.41,87.45 ± 0.99
+Hijacking,73.15 ± 3.65,73.01 ± 4.04,74.14 ± 3.87,72.82 ± 3.23
+Hostage Taking (Barricade Incident),61.95 ± 3.65,63.51 ± 3.92,63.53 ± 4.23,64.23 ± 4.16
+Hostage Taking (Kidnapping),93.69 ± 0.45,93.87 ± 0.28,93.66 ± 0.52,93.58 ± 0.43
+Unarmed Assault,85.30 ± 2.35,86.11 ± 2.00,84.36 ± 2.04,83.48 ± 2.31
+Unknown,96.51 ± 0.38,96.17 ± 0.51,96.46 ± 0.32,96.04 ± 0.37

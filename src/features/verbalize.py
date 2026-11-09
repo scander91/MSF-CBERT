@@ -3,6 +3,8 @@
 # TEMPLATES are the published phrasing. The label is NEVER part of the input:
 # guarded by an assertion at build time.
 """
+import re
+
 TEMPLATES = {
     "region_txt":   "The attack occurred in the {} region.",
     "country_txt":  "The country was {}.",
@@ -12,6 +14,19 @@ TEMPLATES = {
     "targtype1_txt": "The target type was {}.",
     "weaptype1_txt": "The weapon type was {}.",
 }
+
+
+_ABBREV = re.compile(r"(?:\b[A-Z]|\b(?:St|Mr|Mrs|Ms|Dr|Gen|Lt|Col|Maj|Capt|Sgt|Rev|Sen|Rep|Gov|Pres|No|Mt|Ft|Jr|Sr|Prof|Inc|Co|Corp|Dept|approx|vs))\.$")
+
+
+def first_sentence_text(text):
+    """Keep the date stamp and the first sentence of a GTD summary (row-local, deterministic)."""
+    m = re.match(r"^(\d{2}/\d{2}/\d{4}:\s*)?(.*)$", str(text), flags=re.S)
+    stamp, body = m.group(1) or "", m.group(2)
+    for e in re.finditer(r"[.!?](?=\s+[\"'(]?[A-Z0-9])", body):
+        if not _ABBREV.search(body[:e.end()]):
+            return (stamp + body[:e.end()]).strip()
+    return (stamp + body).strip()
 
 
 def verbalize_row(row, selected_features):

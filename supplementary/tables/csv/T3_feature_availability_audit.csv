@@ -1,0 +1,24 @@
+Feature,GTD column,Role,Available at first report,Post-event / label-linked,Treatment in experiments
+Narrative,summary,ConfliBERT text input,Not established,Contains post-event content,Kept; first-sentence variant in restricted_first
+Date stamp in narrative,summary prefix,Part of text input,Plausible,No,Kept
+Region,region_txt,Verbalised category (selected on every seed),Plausible,No,Kept in restricted
+Country,country_txt,Verbalised category,Plausible,No,Kept in restricted
+Target type,targtype1_txt,Verbalised category,Plausible but not established,Possibly,Kept in restricted; flagged
+Weapon type,weaptype1_txt,Verbalised category,Not established,Strongly label-linked,Dropped in restricted; no_weapon
+Perpetrator group,gname,Verbalised category,Often not,Post-event attribution,Dropped in restricted; no_perp
+Fatalities,nkill,Dense numeric,No,Outcome,no_outcome; no_casualty; dropped in restricted
+Injuries,nwound,Dense numeric,No,Outcome,no_outcome; no_casualty; dropped in restricted
+Success,success,Dense numeric,No,Outcome and definition-linked,no_outcome; no_success; dropped in restricted
+Extended,extended,Dense numeric,No,Outcome and label-linked,no_outcome; no_extended; dropped in restricted
+Property damage,property,Dense numeric,No,Outcome and label-linked,no_outcome; no_property; dropped in restricted
+Suicide,suicide,Dense numeric,Not established,Possibly label-linked,Dropped in restricted
+Multiple,multiple,Dense numeric,No,Analyst linkage,no_coded; dropped in restricted
+Criterion 1,crit1,Dense numeric,No,Analyst inclusion coding,no_coded; dropped in restricted
+Criterion 2,crit2,Dense numeric,No,Analyst inclusion coding,no_coded; dropped in restricted
+Criterion 3,crit3,Dense numeric,No,Analyst inclusion coding,no_coded; dropped in restricted
+Vicinity,vicinity,Dense numeric,Plausible,No,Kept in restricted (only numeric retained)
+International,int_any,Dense numeric,No,Analyst coding,no_coded; dropped in restricted
+Casualty total,casualties,Removed by training-only redundancy filter on all ten seeds,No,Outcome,Not used
+Hostage flag,ishostkid,Removed by training-only redundancy filter on all ten seeds,No,Label-defining,Not used
+Weapon sub-type,weapsubtype1_txt,Structured-only baseline: removed by NMI filter; not in neural input,Not established,Label-linked,Not used
+Province; city,provstate; city,Structured-only baselines only; never verbalised,Plausible,No,Kept in restricted structured-only baselines

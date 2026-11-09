@@ -1,0 +1,7 @@
+System,Val macro-F1,Test macro-F1,Test acc.
+Text only,80.09,76.91,84.30
+Without outcome fields,86.29,83.00,92.67
+Restricted input,80.03,76.75,85.03
+"Restricted input, first sentence",70.75,69.45,79.81
+MSF-CBERT (published run),87.63,83.30,92.94
+Text+categoricals (published run),85.59,83.23,92.59

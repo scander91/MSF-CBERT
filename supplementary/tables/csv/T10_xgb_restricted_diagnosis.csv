@@ -1,0 +1,5 @@
+Split,Validation-selected class weighting,Seeds,Val macro-F1,Test macro-F1,Test acc.,Predicted Bombing share %
+G,none,3,24.50,23.42,55.24,69.4
+G,balanced,7,24.19,24.46,35.76,22.4
+S,none,4,25.00,24.51,55.32,69.0
+S,balanced,6,24.53,24.50,35.89,22.6
